@@ -1,7 +1,4 @@
-/**
- * @param {number} x
- * @return {boolean}
- */
+// https://leetcode.com/problems/palindrome-number/description/
 var isPalindrome = function (x) {
   if (x < 0) return false;
   const y = x.toString();
