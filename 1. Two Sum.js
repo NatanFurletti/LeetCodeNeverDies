@@ -20,3 +20,21 @@ var twoSum = function (nums, target) {
     }
   }
 };
+
+//segunda versao
+
+var twoSum = function (nums, target) {
+  const newArr = [];
+  let i = 0;
+  while (i < nums.length) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[i] + nums[j] === target && i !== j) {
+        newArr.push(i);
+        newArr.push(j);
+        console.log(i, j);
+        return newArr;
+      }
+    }
+    i++;
+  }
+};
