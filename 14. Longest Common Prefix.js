@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/longest-common-prefix/
+
 var longestCommonPrefix = function (strs) {
   if (strs.length === 0) return "";
   if (strs.length === 1) return strs[0];
